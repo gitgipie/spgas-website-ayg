@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SP Gas & Maintenance | Registered Gas Practitioner</title>
+    <meta name="description" content="Get in touch with Stanley Powell for certified gas installations in South Africa. Send an enquiry, call directly, or message on WhatsApp.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact Us | SP Gas & Maintenance">
+    <meta property="og:description" content="Get in touch with Stanley Powell for certified gas installations in South Africa. Send an enquiry, call directly, or message on WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spgas.co.za/contact.html">
+    <meta property="og:image" content="assets/sp_logo_clean.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables & Tokens */
+        :root {
+            --primary: #0047AB; /* Royal Blue */
+            --primary-light: #f4f7fb;
+            --accent: #111111; /* Black */
+            --accent-hover: #333333;
+            --accent-green: #0047AB; /* Make WhatsApp buttons Royal Blue too */
+            --accent-green-hover: #003380;
+            --text-dark: #111111;
+            --text-muted: #555555;
+            --text-light: #ffffff;
+            --bg-light: #f4f7fb;
+            --bg-white: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-lg: 0 4px 6px rgba(0,0,0,0.05);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-headings: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-headings);
+            font-weight: 700;
+            line-height: 1.25;
+            color: var(--primary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Buttons & CTAs */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            font-weight: 600;
+            border-radius: 6px;
+            font-family: var(--font-headings);
+            font-size: 1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            width: auto;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--bg-white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 26, 0.3);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--accent-green);
+            color: var(--bg-white);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--accent-green-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: var(--text-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-block {
+            display: flex;
+            width: 100%;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-top {
+            background-color: var(--accent);
+            color: var(--bg-white);
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .header-top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .header-top-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-top-left span, .header-top-left a {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .header-top-left a:hover {
+            color: var(--accent);
+        }
+
+        .header-top-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .header-main {
+            padding: 0.875rem 0;
+        }
+
+        .header-main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-img {
+            height: 85px;
+            width: auto;
+            border-radius: 4px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--primary);
+            font-family: var(--font-headings);
+            font-size: 1rem;
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .nav-cta-desktop {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .nav-cta-desktop .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary);
+            margin: 5px 0;
+            transition: var(--transition);
+        }
+
+        /* Page Banner */
+        .page-banner {
+            background: radial-gradient(circle at 10% 20%, var(--primary-light) 0%, var(--primary) 90%);
+            color: var(--text-dark);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-banner h1 {
+            color: var(--text-dark);
+            font-size: 2.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .page-banner p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Content Section */
+        .contact-section {
+            padding: 6rem 0;
+            background-color: var(--bg-white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 5rem;
+            align-items: flex-start;
+        }
+
+        /* Left Side: Contact Channels */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .info-group h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .direct-cards-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .direct-card {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            transition: var(--transition);
+        }
+
+        .direct-card:hover {
+            border-color: var(--accent);
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .direct-icon-box {
+            width: 44px;
+            height: 44px;
+            border-radius: 6px;
+            background-color: rgba(10, 22, 40, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .direct-card:hover .direct-icon-box {
+            background-color: var(--accent);
+            color: var(--text-dark);
+        }
+
+        .direct-card-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .direct-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
+        .direct-value {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.05rem;
+            font-family: var(--font-headings);
+        }
+
+        .office-details-card {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .office-item {
+            display: flex;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .office-item svg {
+            color: var(--accent);
+            width: 20px;
+            height: 20px;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+
+        .office-label {
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 0.15rem;
+        }
+
+        .office-val {
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .site-visit-badge {
+            background-color: rgba(255, 107, 26, 0.05);
+            border: 1px solid rgba(255, 107, 26, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .site-visit-badge h4 {
+            color: var(--accent);
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .site-visit-badge p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Right Side: Enquiry Form */
+        .form-card {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .form-header {
+            background-color: var(--primary);
+            color: var(--text-dark);
+            padding: 2rem;
+        }
+
+        .form-header h2 {
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .form-header p {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .form-body {
+            padding: 2.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row .form-group {
+            margin-bottom: 0;
+        }
+
+        .form-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            transition: var(--transition);
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(255, 107, 26, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Success Alert State */
+        .form-success-box {
+            display: none;
+            background-color: rgba(37, 211, 102, 0.08);
+            border: 1px solid rgba(37, 211, 102, 0.3);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            text-align: center;
+        }
+
+        .form-success-box h4 {
+            color: var(--accent-green-hover);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.35rem;
+        }
+
+        .form-success-box h4 svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .form-success-box p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer Disclaimer */
+        footer {
+            background-color: var(--bg-light);
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 0 2rem 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-logo-img {
+            height: 50px;
+            width: auto;
+            align-self: flex-start;
+            border-radius: 4px;
+        }
+
+        .footer-links-section h4, .footer-contact-section h4 {
+            color: var(--primary);
+            font-size: 1rem;
+            margin-bottom: 1.25rem;
+            font-family: var(--font-headings);
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 4px;
+        }
+
+        .footer-contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .footer-contact-item svg {
+            color: var(--accent);
+            width: 18px;
+            height: 18px;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+
+        .footer-contact-item a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .footer-legal-notice {
+            font-size: 0.75rem;
+            line-height: 1.5;
+            color: var(--text-muted);
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        .footer-copyright {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.8rem;
+        }
+
+        /* Sticky Mobile WhatsApp Floating Action Button (FAB) */
+        .sticky-whatsapp-fab {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 99;
+            background-color: var(--accent-green);
+            color: var(--text-dark);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+        }
+
+        .sticky-whatsapp-fab:hover {
+            background-color: var(--accent-green-hover);
+            transform: scale(1.1);
+        }
+
+        .sticky-whatsapp-fab svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-top {
+                display: none;
+            }
+            .nav-cta-desktop {
+                display: none;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--bg-white);
+                border-bottom: 1px solid var(--border-color);
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 1.5rem;
+                box-shadow: var(--shadow-md);
+            }
+            nav.open {
+                display: flex;
+            }
+            .nav-link.active::after {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .menu-toggle.open span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            .menu-toggle.open span:nth-child(2) {
+                opacity: 0;
+            }
+            .menu-toggle.open span:nth-child(3) {
+                transform: rotate(-45deg) translate(6px, -6px);
+            }
+            .page-banner h1 {
+                font-size: 2.25rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .form-body {
+                padding: 1.5rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Header Top Info Bar -->
+    <div class="header-top">
+        <div class="container header-top-content">
+            <div class="header-top-left">
+                <span>
+                    <!-- Location Pin SVG -->
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Utopia Nature Estate, NW (Nationwide SA)
+                </span>
+                <a href="mailto:spgas.maintenance@gmail.com">
+                    <!-- Email SVG -->
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    spgas.maintenance@gmail.com
+                </a>
+            </div>
+            <div class="header-top-right">
+                <a href="tel:+27846692424" style="color: var(--accent); display: flex; align-items: center; gap: 0.35rem;">
+                    <!-- Phone SVG -->
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Call Stanley: 084 669 2424
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="container header-main-content">
+            <a href="index.html" class="logo-container">
+                <img src="assets/sp_logo_clean.png" alt="SP Gas & Maintenance Monogram" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">SP Gas & Maintenance</span>
+                    <span class="logo-subtitle">SAQCC Gas Installations</span>
+                </div>
+            </a>
+            
+            <nav id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+
+            <div class="nav-cta-desktop">
+                <a href="tel:+27846692424" class="btn btn-primary">📞 Call Now</a>
+                <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20to%20request%20a%20gas%20installation%20quote." target="_blank" rel="noopener" class="btn btn-whatsapp">💬 WhatsApp</a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Request quotes, arrange technical site assessments, or chat directly with Stanley Powell.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="contact-section">
+        <div class="container contact-grid">
+            
+            <!-- Left Column: Info, cards, hours -->
+            <div class="contact-info">
+                
+                <div class="info-group">
+                    <h2>Get In Touch</h2>
+                    <p class="info-desc">We coordinate and execute technical gas pipeline projects nationwide across South Africa. Choose your preferred communication channel below.</p>
+                    
+                    <div class="direct-cards-list">
+                        
+                        <!-- Call Card -->
+                        <a href="tel:+27846692424" class="direct-card">
+                            <div class="direct-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="direct-card-content">
+                                <span class="direct-label">📞 Voice Call</span>
+                                <span class="direct-value">084 669 2424</span>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp Card -->
+                        <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20to%20enquire%20about%20your%20gas%20installer%20services." target="_blank" rel="noopener" class="direct-card">
+                            <div class="direct-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div class="direct-card-content">
+                                <span class="direct-label">💬 WhatsApp Stanley</span>
+                                <span class="direct-value">wa.me/27846692424</span>
+                            </div>
+                        </a>
+
+                        <!-- Email Card -->
+                        <a href="mailto:spgas.maintenance@gmail.com" class="direct-card">
+                            <div class="direct-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="direct-card-content">
+                                <span class="direct-label">✉️ Email Support</span>
+                                <span class="direct-value">spgas.maintenance@gmail.com</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Office / Address Details -->
+                <div class="office-details-card">
+                    
+                    <div class="office-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <div>
+                            <span class="office-label">Physical Address</span>
+                            <span class="office-val">
+                                Utopia Nature Estate, B1 Portion 3,<br>
+                                Grootfontein Farm, Buffelspoort Road,<br>
+                                North West, 0350
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Utopia+Nature+Estate+Buffelspoort+North+West+South+Africa" target="_blank" rel="noopener" style="color: var(--accent); font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.85rem; margin-top: 0.5rem;">
+                                Get Directions
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="office-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <div>
+                            <span class="office-label">Working Hours</span>
+                            <span class="office-val">Weekdays &middot; 8am&ndash;5pm &middot; Emergency callouts on request</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Site Visit Callout -->
+                <div class="site-visit-badge">
+                    <h4>Book a Site Visit</h4>
+                    <p>Request a physical or virtual assessment of your premises to prepare exact piping blueprints and flow designs.</p>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="form-container">
+                <div class="form-card">
+                    <div class="form-header">
+                        <h2>Send Technical Enquiry</h2>
+                        <p>Submit your gas specification details, and we will follow up promptly.</p>
+                    </div>
+                    
+                    <div class="form-body">
+                        <!-- Success alert message box -->
+                        <div class="form-success-box" id="form-success">
+                            <h4>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Message Sent Successfully!
+                            </h4>
+                            <p>Thank you. Stanley will review your gas requirements and contact you shortly.</p>
+                        </div>
+
+                        <form id="enquiry-form" action="#" method="POST">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" required placeholder="e.g. John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company" class="form-label">Company Name</label>
+                                    <input type="text" id="company" name="company" class="form-input" placeholder="e.g. Acme Labs">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" required placeholder="e.g. 082 123 4567">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required placeholder="e.g. john@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service" class="form-label">Required Gas Service *</label>
+                                <select id="service" name="service" class="form-select" required>
+                                    <option value="" disabled selected>-- Select a specialized service --</option>
+                                    <option value="laser">Laser Installations</option>
+                                    <option value="laboratory">Laboratory Gas Piping</option>
+                                    <option value="welding">Welding Gas Supply & Installation</option>
+                                    <option value="medical">Medical Gas Piping</option>
+                                    <option value="bulk">Bulk Tanks & Reticulation</option>
+                                    <option value="industrial">Industrial Gas Pipelines</option>
+                                    <option value="general">General Gas Inquiry / Site Visit</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Project Details / Requirements *</label>
+                                <textarea id="message" name="message" class="form-textarea" required placeholder="Describe your gas piping requirements, safety specs, pipeline length, or current gas setup..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" style="padding: 1rem;">✉️ Send Technical Enquiry</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-logo-section">
+                <img src="assets/sp_logo_clean.png" alt="SP Gas & Maintenance Monogram" class="footer-logo-img">
+                <p style="font-weight: 700; color: var(--primary);">SP Gas & Maintenance (Pty) Ltd</p>
+                <p style="font-size: 0.8rem; line-height: 1.4;">
+                    Professional SAQCC-registered gas installations, piping, manifolds, and reticulation. Nationwide service.
+                </p>
+                <p style="font-size: 0.8rem;">
+                    Reg No: 2025/188851/07<br>
+                    SAQCC Gas practitioner: #984
+                </p>
+            </div>
+            
+            <div class="footer-links-section">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Stanley</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact-section">
+                <h4>Contact Details</h4>
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; display: block; color: var(--text-muted);">Phone & WhatsApp</span>
+                            <a href="tel:+27846692424" style="font-weight: 600; color: var(--primary);">084 669 2424</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; display: block; color: var(--text-muted);">Email Address</span>
+                            <a href="mailto:spgas.maintenance@gmail.com" style="font-weight: 600; color: var(--primary);">spgas.maintenance@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; display: block; color: var(--text-muted);">Physical Location</span>
+                            <span style="font-size: 0.8rem; line-height: 1.4;">
+                                Utopia Nature Estate, B1 Portion 3,<br>
+                                Grootfontein Farm, Buffelspoort Road,<br>
+                                North West, 0350
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <div class="footer-legal-notice">
+                <strong>Legal Notice:</strong> SP Gas & Maintenance (Pty) Ltd is an independent entity operating in South Africa. Stanley Powell is a former Air Products employee, and this past relationship is cited solely as part of his professional history and credential verification. SP Gas & Maintenance (Pty) Ltd has no current affiliation with, sponsorship from, or endorsement by Air Products.
+            </div>
+            <div class="footer-copyright">
+                <span>&copy; 2026 SP Gas & Maintenance (Pty) Ltd. All rights reserved.</span>
+                <span>SAQCC Registration Number: 984</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile WhatsApp Button (Bottom Right) -->
+    <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20to%20request%20a%20gas%20installation%20quote." target="_blank" rel="noopener" class="sticky-whatsapp-fab" aria-label="Chat with Stanley on WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.859-4.42 9.863-9.864.002-2.637-1.023-5.116-2.887-6.98C16.584 1.897 14.1 1.872 11.464 1.872c-5.439 0-9.865 4.42-9.869 9.864-.001 1.702.46 3.366 1.332 4.815L1.936 21.05l4.711-1.236zm11.33-6.914c-.29-.145-1.713-.846-1.977-.941-.264-.096-.457-.145-.65.145-.19.29-.738.941-.906 1.133-.168.193-.336.217-.626.072-.29-.145-1.222-.45-2.328-1.437-.86-.767-1.44-1.716-1.61-2.006-.17-.29-.017-.446.129-.59.13-.13.29-.336.435-.506.145-.17.193-.29.29-.482.096-.193.048-.361-.024-.506-.073-.145-.65-1.566-.89-2.145-.233-.563-.489-.487-.65-.495-.168-.008-.361-.01-.555-.01s-.51.072-.777.361c-.266.29-1.02.997-1.02 2.429 0 1.433 1.04 2.815 1.185 3.007.145.193 2.05 3.13 4.966 4.385.694.3 1.236.478 1.658.613.698.222 1.334.19 1.838.115.56-.084 1.713-.699 1.953-1.373.24-.675.24-1.253.168-1.373-.072-.12-.265-.193-.555-.338z"/>
+        </svg>
+    </a>
+
+    <!-- Menu Toggle & Form Interceptor Script -->
+    <script>
+        // Nav Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('open');
+            navMenu.classList.toggle('open');
+        });
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('open');
+                navMenu.classList.remove('open');
+            });
+        });
+
+        // Form Submission Interception & Mock Validation
+        const enquiryForm = document.getElementById('enquiry-form');
+        const formSuccess = document.getElementById('form-success');
+
+        enquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Stop page reload/post-back
+            
+            // Basic validation check
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+
+            if (name && phone && email && service && message) {
+                // Show success block
+                formSuccess.style.display = 'block';
+                enquiryForm.reset(); // Clear form fields
+                
+                // Scroll success block into view smoothly
+                formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Optional auto-hide alert after 10 seconds
+                setTimeout(() => {
+                    formSuccess.style.display = 'none';
+                }, 10000);
+            }
+        });
+    </script>
+</body>
+</html>

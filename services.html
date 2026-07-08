@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | SP Gas & Maintenance | SAQCC Certified Installations</title>
+    <meta name="description" content="Explore our 6 key gas installer services nationwide. Specialized laser, lab, medical, welding, bulk tank, and industrial piping installations by Stanley Powell.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Our Services | SP Gas & Maintenance">
+    <meta property="og:description" content="Explore our 6 key gas installer services nationwide. Specialized laser, lab, medical, welding, bulk tank, and industrial piping installations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spgas.co.za/services.html">
+    <meta property="og:image" content="assets/sp_logo_clean.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables & Tokens */
+        :root {
+            --primary: #0047AB; /* Royal Blue */
+            --primary-light: #f4f7fb;
+            --accent: #111111; /* Black */
+            --accent-hover: #333333;
+            --accent-green: #0047AB; /* Make WhatsApp buttons Royal Blue too */
+            --accent-green-hover: #003380;
+            --text-dark: #111111;
+            --text-muted: #555555;
+            --text-light: #ffffff;
+            --bg-light: #f4f7fb;
+            --bg-white: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-lg: 0 4px 6px rgba(0,0,0,0.05);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-headings: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-headings);
+            font-weight: 700;
+            line-height: 1.25;
+            color: var(--primary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Buttons & CTAs */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            font-weight: 600;
+            border-radius: 6px;
+            font-family: var(--font-headings);
+            font-size: 1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--bg-white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 26, 0.3);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--accent-green);
+            color: var(--bg-white);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--accent-green-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: var(--text-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-top {
+            background-color: var(--accent);
+            color: var(--bg-white);
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .header-top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .header-top-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-top-left span, .header-top-left a {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .header-top-left a:hover {
+            color: var(--accent);
+        }
+
+        .header-top-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .header-main {
+            padding: 0.875rem 0;
+        }
+
+        .header-main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-img {
+            height: 85px;
+            width: auto;
+            border-radius: 4px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--primary);
+            font-family: var(--font-headings);
+            font-size: 1rem;
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .nav-cta-desktop {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .nav-cta-desktop .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary);
+            margin: 5px 0;
+            transition: var(--transition);
+        }
+
+        /* Page Banner */
+        .page-banner {
+            background: radial-gradient(circle at 10% 20%, var(--primary-light) 0%, var(--primary) 90%);
+            color: var(--text-dark);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-banner h1 {
+            color: var(--text-dark);
+            font-size: 2.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .page-banner p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Services Sections Layout */
+        .services-detail-list {
+            padding: 4rem 0;
+            background-color: var(--bg-white);
+        }
+
+        .service-detail-item {
+            padding: 5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .service-detail-item:last-child {
+            border-bottom: none;
+        }
+
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .service-detail-item:nth-child(even) .service-detail-grid {
+            direction: rtl; /* Flip grid layout for alternating effect */
+        }
+
+        .service-detail-item:nth-child(even) .service-detail-content {
+            direction: ltr; /* Reset text direction for content */
+        }
+
+        .service-detail-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .service-tag {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-title {
+            font-size: 2.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .service-desc {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 1.75rem;
+            line-height: 1.7;
+        }
+
+        .service-includes-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .service-includes-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 2.25rem;
+            width: 100%;
+        }
+
+        .service-includes-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .service-includes-list li svg {
+            color: var(--accent);
+            width: 18px;
+            height: 18px;
+            margin-top: 0.25rem;
+            flex-shrink: 0;
+        }
+
+        .service-detail-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        /* Photo Placeholders */
+        .work-photo-placeholder {
+            border: 2px dashed var(--border-color);
+            background-color: var(--bg-light);
+            border-radius: 8px;
+            padding: 4rem 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 3 / 2;
+            width: 100%;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        .work-photo-placeholder:hover {
+            border-color: var(--accent);
+            background-color: rgba(255, 107, 26, 0.02);
+        }
+
+        .work-photo-icon {
+            width: 44px;
+            height: 44px;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .work-photo-placeholder h4 {
+            font-size: 1.05rem;
+            margin-bottom: 0.25rem;
+            color: var(--primary);
+        }
+
+        .work-photo-placeholder p {
+            font-size: 0.8rem;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            background-color: var(--primary);
+            color: var(--bg-white);
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 107, 26, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .final-cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .final-cta h2 {
+            color: var(--bg-white);
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .final-cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--bg-light);
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 0 2rem 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-logo-img {
+            height: 50px;
+            width: auto;
+            align-self: flex-start;
+            border-radius: 4px;
+        }
+
+        .footer-links-section h4, .footer-contact-section h4 {
+            color: var(--primary);
+            font-size: 1rem;
+            margin-bottom: 1.25rem;
+            font-family: var(--font-headings);
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 4px;
+        }
+
+        .footer-contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .footer-contact-item svg {
+            color: var(--accent);
+            width: 18px;
+            height: 18px;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+
+        .footer-contact-item a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .footer-legal-notice {
+            font-size: 0.75rem;
+            line-height: 1.5;
+            color: var(--text-muted);
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        .footer-copyright {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.8rem;
+        }
+
+        /* Sticky Mobile WhatsApp Floating Action Button (FAB) */
+        .sticky-whatsapp-fab {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 99;
+            background-color: var(--accent-green);
+            color: var(--text-dark);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+        }
+
+        .sticky-whatsapp-fab:hover {
+            background-color: var(--accent-green-hover);
+            transform: scale(1.1);
+        }
+
+        .sticky-whatsapp-fab svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .service-detail-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .service-detail-item:nth-child(even) .service-detail-grid {
+                direction: ltr; /* Disable alternation on mobile viewports for clean stacking */
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-top {
+                display: none;
+            }
+            .nav-cta-desktop {
+                display: none;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--bg-white);
+                border-bottom: 1px solid var(--border-color);
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 1.5rem;
+                box-shadow: var(--shadow-md);
+            }
+            nav.open {
+                display: flex;
+            }
+            .nav-link.active::after {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .menu-toggle.open span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            .menu-toggle.open span:nth-child(2) {
+                opacity: 0;
+            }
+            .menu-toggle.open span:nth-child(3) {
+                transform: rotate(-45deg) translate(6px, -6px);
+            }
+            .page-banner h1 {
+                font-size: 2.25rem;
+            }
+            .service-title {
+                font-size: 1.75rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Header Top Info Bar -->
+    <div class="header-top">
+        <div class="container header-top-content">
+            <div class="header-top-left">
+                <span>
+                    <!-- Location Pin SVG -->
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Utopia Nature Estate, NW (Nationwide SA)
+                </span>
+                <a href="mailto:spgas.maintenance@gmail.com">
+                    <!-- Email SVG -->
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    spgas.maintenance@gmail.com
+                </a>
+            </div>
+            <div class="header-top-right">
+                <a href="tel:+27846692424" style="color: var(--accent); display: flex; align-items: center; gap: 0.35rem;">
+                    <!-- Phone SVG -->
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Call Stanley: 084 669 2424
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="container header-main-content">
+            <a href="index.html" class="logo-container">
+                <img src="assets/sp_logo_clean.png" alt="SP Gas & Maintenance Monogram" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">SP Gas & Maintenance</span>
+                    <span class="logo-subtitle">SAQCC Gas Installations</span>
+                </div>
+            </a>
+            
+            <nav id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-cta-desktop">
+                <a href="tel:+27846692424" class="btn btn-primary">📞 Call Now</a>
+                <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20to%20request%20a%20gas%20installation%20quote." target="_blank" rel="noopener" class="btn btn-whatsapp">💬 WhatsApp</a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Technical Services</h1>
+            <p>SANS-aligned, high-precision gas installations and piping solutions across commercial, medical, laboratory, and industrial sectors nationwide.</p>
+        </div>
+    </section>
+
+    <!-- Services Detailed Sections -->
+    <section class="services-detail-list">
+        <div class="container">
+
+            <!-- Service 1: Laser Installations -->
+            <div class="service-detail-item" id="laser">
+                <div class="service-detail-grid">
+                    <div class="service-detail-content">
+                        <span class="service-tag">Service 01</span>
+                        <h2 class="service-title">Laser Installations</h2>
+                        <p class="service-desc">
+                            We design and construct high-purity laser gas reticulation systems that meet strict industry specifications. Resonator and assist gases (nitrogen, oxygen, carbon dioxide, and helium) must remain completely free of moisture and particulate contamination to protect expensive laser cutting optics and ensure edge-cutting precision.
+                        </p>
+                        <h4 class="service-includes-title">What's included:</h4>
+                        <ul class="service-includes-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                High-purity gas manifold setups and dual-stage pressure regulators.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Stainless steel orbital-welded or compression-fitted piping lines.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Helium leak-testing, pressure purging, and full SAQCC Certificate of Compliance (COC) sign-off.
+                            </li>
+                        </ul>
+                        <div class="service-detail-buttons">
+                            <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20a%20quote%20for%20laser%20installations" target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Discuss via WhatsApp</a>
+                            <a href="tel:+27846692424" class="btn btn-secondary">📞 Call: 084 669 2424</a>
+                        </div>
+                    </div>
+                    <div class="service-detail-visual">
+                        <div class="work-photo-placeholder">
+                            <svg class="work-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            <h4>Laser Gas Installation Photo</h4>
+                            <p>[Photo placeholder - e.g. manifold setup]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: Laboratory Gas Piping -->
+            <div class="service-detail-item" id="laboratory">
+                <div class="service-detail-grid">
+                    <div class="service-detail-content">
+                        <span class="service-tag">Service 02</span>
+                        <h2 class="service-title">Laboratory Gas Piping</h2>
+                        <p class="service-desc">
+                            Analytical instruments like gas chromatographs (GC), mass spectrometers (MS), and atomic absorption systems require stable pressures and ultra-high purity (UHP) gas supplies. We install laboratory-grade copper or stainless steel pipelines with proper purge assemblies and point-of-use gas panels.
+                        </p>
+                        <h4 class="service-includes-title">What's included:</h4>
+                        <ul class="service-includes-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                UHP gas reticulation (99.999% purity lines) with specialized purge valves.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Wall-mounted outlet panels, micro-metering regulators, and pressure sensors.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Gas leak verification and issuing of the SAQCC compliance certificate.
+                            </li>
+                        </ul>
+                        <div class="service-detail-buttons">
+                            <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20a%20quote%20for%20laboratory%20gas%20piping" target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Discuss via WhatsApp</a>
+                            <a href="tel:+27846692424" class="btn btn-secondary">📞 Call: 084 669 2424</a>
+                        </div>
+                    </div>
+                    <div class="service-detail-visual">
+                        <div class="work-photo-placeholder">
+                            <svg class="work-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            <h4>Laboratory Piping Photo</h4>
+                            <p>[Photo placeholder - e.g. lab outlet panels]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: Welding Gas Supply & Installation -->
+            <div class="service-detail-item" id="welding">
+                <div class="service-detail-grid">
+                    <div class="service-detail-content">
+                        <span class="service-tag">Service 03</span>
+                        <h2 class="service-title">Welding Gas Supply & Installation</h2>
+                        <p class="service-desc">
+                            For fabrication workshops and manufacturing plants, we install central welding gas manifolds and piping distribution. Centralizing gas cylinders outside the workshop increases floor safety, simplifies cylinder management, and provides a continuous flow of shield gases (argon, carbon dioxide mixtures, oxygen, and acetylene).
+                        </p>
+                        <h4 class="service-includes-title">What's included:</h4>
+                        <ul class="service-includes-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Centralized gas cylinder manifold manifolds with safety flashback arrestors.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Heavy-duty piping layout to workbenches or welding bays.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Pressure testing, safety checks, and SANS-compliant COC certification.
+                            </li>
+                        </ul>
+                        <div class="service-detail-buttons">
+                            <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20a%20quote%20for%20welding%20gas%20supply%20%26%20installation" target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Discuss via WhatsApp</a>
+                            <a href="tel:+27846692424" class="btn btn-secondary">📞 Call: 084 669 2424</a>
+                        </div>
+                    </div>
+                    <div class="service-detail-visual">
+                        <div class="work-photo-placeholder">
+                            <svg class="work-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            <h4>Workshop Welding Setup Photo</h4>
+                            <p>[Photo placeholder - e.g. manifold cylinders]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: Medical Gas Piping -->
+            <div class="service-detail-item" id="medical">
+                <div class="service-detail-grid">
+                    <div class="service-detail-content">
+                        <span class="service-tag">Service 04</span>
+                        <h2 class="service-title">Medical Gas Piping</h2>
+                        <p class="service-desc">
+                            We execute highly regulated medical gas piping projects for hospitals, dental clinics, veterinary surgeries, and outpatient centers. All installations conform to stringent medical sanitary codes, ensuring leak-free delivery of oxygen, nitrous oxide, medical air, and vacuum lines.
+                        </p>
+                        <h4 class="service-includes-title">What's included:</h4>
+                        <ul class="service-includes-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Installation of medical-grade copper pipelines, degreased for oxygen services.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Outlet boxes, medical gas manifolds, zone alarm valves, and emergency shut-offs.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Pressure decay testing, cross-connection checks, gas purity testing, and SAQCC COC sign-off.
+                            </li>
+                        </ul>
+                        <div class="service-detail-buttons">
+                            <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20a%20quote%20for%20medical%20gas%20piping" target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Discuss via WhatsApp</a>
+                            <a href="tel:+27846692424" class="btn btn-secondary">📞 Call: 084 669 2424</a>
+                        </div>
+                    </div>
+                    <div class="service-detail-visual">
+                        <div class="work-photo-placeholder">
+                            <svg class="work-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            <h4>Medical Piping Photo</h4>
+                            <p>[Photo placeholder - e.g. wall outlet box]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5: Bulk Tanks + Reticulation -->
+            <div class="service-detail-item" id="bulk">
+                <div class="service-detail-grid">
+                    <div class="service-detail-content">
+                        <span class="service-tag">Service 05</span>
+                        <h2 class="service-title">Bulk Tanks & Reticulation</h2>
+                        <p class="service-desc">
+                            For industries requiring high volumes of gas, we coordinate bulk tank installations and piping reticulation networks. We calculate optimal line sizes, select vaporizers, install control blocks, and run underground or overhead distribution pipelines to primary process consumption zones.
+                        </p>
+                        <h4 class="service-includes-title">What's included:</h4>
+                        <ul class="service-includes-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Reticulation pipeline design matching consumption flow rates and pressure requirements.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Vaporizer integration, relief valve piping, and pressure regulation stations.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Full engineering compliance checks, hydraulic pressure tests, and SAQCC COC certification.
+                            </li>
+                        </ul>
+                        <div class="service-detail-buttons">
+                            <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20a%20quote%20for%20bulk%20tanks%20%26%20reticulation" target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Discuss via WhatsApp</a>
+                            <a href="tel:+27846692424" class="btn btn-secondary">📞 Call: 084 669 2424</a>
+                        </div>
+                    </div>
+                    <div class="service-detail-visual">
+                        <div class="work-photo-placeholder">
+                            <svg class="work-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            <h4>Bulk Tank Installation Photo</h4>
+                            <p>[Photo placeholder - e.g. tank base piping]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6: Industrial Gas Pipelines -->
+            <div class="service-detail-item" id="pipelines">
+                <div class="service-detail-grid">
+                    <div class="service-detail-content">
+                        <span class="service-tag">Service 06</span>
+                        <h2 class="service-title">Industrial Gas Pipelines</h2>
+                        <p class="service-desc">
+                            We build durable, high-pressure industrial gas pipeline networks for manufacturing facilities, foundries, and chemical processing sites. Our pipelines handle gases like nitrogen, oxygen, argon, hydrogen, and carbon dioxide, incorporating mandatory safety devices and ventilation blocks.
+                        </p>
+                        <h4 class="service-includes-title">What's included:</h4>
+                        <ul class="service-includes-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Industrial steel or copper pipeline welding, fitting, and anchoring.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Flow control, isolation valves, emergency shut-offs, and venting networks.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Pressure testing, safety audits, SANS compliance verification, and COC release.
+                            </li>
+                        </ul>
+                        <div class="service-detail-buttons">
+                            <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20a%20quote%20for%20industrial%20gas%20pipelines" target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Discuss via WhatsApp</a>
+                            <a href="tel:+27846692424" class="btn btn-secondary">📞 Call: 084 669 2424</a>
+                        </div>
+                    </div>
+                    <div class="service-detail-visual">
+                        <div class="work-photo-placeholder">
+                            <svg class="work-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            <h4>Industrial Pipeline Photo</h4>
+                            <p>[Photo placeholder - e.g. pipeline runs]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="final-cta">
+        <div class="container final-cta-content">
+            <h2>Need a Compliance-First Gas Installation?</h2>
+            <p>Ensure full legal and safety compliance. Get in touch directly with Stanley Powell for advice, site visits, or quotes across South Africa.</p>
+            <div class="final-cta-buttons">
+                <a href="tel:+27846692424" class="btn btn-primary" style="background-color: var(--accent); font-size: 1.1rem; padding: 1rem 2rem;">📞 Call 084 669 2424</a>
+                <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20to%20discuss%20a%20site%20visit%20for%20gas%20piping." target="_blank" rel="noopener" class="btn btn-whatsapp" style="font-size: 1.1rem; padding: 1rem 2rem;">💬 Message on WhatsApp</a>
+                <a href="contact.html" class="btn btn-secondary" style="border-color: var(--text-dark); color: var(--text-dark); font-size: 1.1rem; padding: 1rem 2rem;">✉️ Send Enquiry Form</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-logo-section">
+                <img src="assets/sp_logo_clean.png" alt="SP Gas & Maintenance Monogram" class="footer-logo-img">
+                <p style="font-weight: 700; color: var(--primary);">SP Gas & Maintenance (Pty) Ltd</p>
+                <p style="font-size: 0.8rem; line-height: 1.4;">
+                    Professional SAQCC-registered gas installations, piping, manifolds, and reticulation. Nationwide service.
+                </p>
+                <p style="font-size: 0.8rem;">
+                    Reg No: 2025/188851/07<br>
+                    SAQCC Gas practitioner: #984
+                </p>
+            </div>
+            
+            <div class="footer-links-section">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Stanley</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact-section">
+                <h4>Contact Details</h4>
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; display: block; color: var(--text-muted);">Phone & WhatsApp</span>
+                            <a href="tel:+27846692424" style="font-weight: 600; color: var(--primary);">084 669 2424</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; display: block; color: var(--text-muted);">Email Address</span>
+                            <a href="mailto:spgas.maintenance@gmail.com" style="font-weight: 600; color: var(--primary);">spgas.maintenance@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; display: block; color: var(--text-muted);">Physical Location</span>
+                            <span style="font-size: 0.8rem; line-height: 1.4;">
+                                Utopia Nature Estate, B1 Portion 3,<br>
+                                Grootfontein Farm, Buffelspoort Road,<br>
+                                North West, 0350
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <div class="footer-legal-notice">
+                <strong>Legal Notice:</strong> SP Gas & Maintenance (Pty) Ltd is an independent entity operating in South Africa. Stanley Powell is a former Air Products employee, and this past relationship is cited solely as part of his professional history and credential verification. SP Gas & Maintenance (Pty) Ltd has no current affiliation with, sponsorship from, or endorsement by Air Products.
+            </div>
+            <div class="footer-copyright">
+                <span>&copy; 2026 SP Gas & Maintenance (Pty) Ltd. All rights reserved.</span>
+                <span>SAQCC Registration Number: 984</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile WhatsApp Button (Bottom Right) -->
+    <a href="https://wa.me/27846692424?text=Hi%20Stanley%2C%20I'd%20like%20to%20request%20a%20gas%20installation%20quote." target="_blank" rel="noopener" class="sticky-whatsapp-fab" aria-label="Chat with Stanley on WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.859-4.42 9.863-9.864.002-2.637-1.023-5.116-2.887-6.98C16.584 1.897 14.1 1.872 11.464 1.872c-5.439 0-9.865 4.42-9.869 9.864-.001 1.702.46 3.366 1.332 4.815L1.936 21.05l4.711-1.236zm11.33-6.914c-.29-.145-1.713-.846-1.977-.941-.264-.096-.457-.145-.65.145-.19.29-.738.941-.906 1.133-.168.193-.336.217-.626.072-.29-.145-1.222-.45-2.328-1.437-.86-.767-1.44-1.716-1.61-2.006-.17-.29-.017-.446.129-.59.13-.13.29-.336.435-.506.145-.17.193-.29.29-.482.096-.193.048-.361-.024-.506-.073-.145-.65-1.566-.89-2.145-.233-.563-.489-.487-.65-.495-.168-.008-.361-.01-.555-.01s-.51.072-.777.361c-.266.29-1.02.997-1.02 2.429 0 1.433 1.04 2.815 1.185 3.007.145.193 2.05 3.13 4.966 4.385.694.3 1.236.478 1.658.613.698.222 1.334.19 1.838.115.56-.084 1.713-.699 1.953-1.373.24-.675.24-1.253.168-1.373-.072-.12-.265-.193-.555-.338z"/>
+        </svg>
+    </a>
+
+    <!-- Basic Menu Toggle Script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('open');
+            navMenu.classList.toggle('open');
+        });
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('open');
+                navMenu.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+</html>
