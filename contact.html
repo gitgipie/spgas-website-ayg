@@ -749,6 +749,19 @@
                 gap: 2.5rem;
             }
         }
+    
+        /* Pulse Animation for CTAs */
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+        }
+        .btn-pulse {
+            animation: pulse-glow 2.5s infinite cubic-bezier(0.66, 0, 0, 1);
+        }
+        .btn-pulse:hover {
+            animation: none; /* Stop pulsing on hover */
+        }
     </style>
 </head>
 <body>
