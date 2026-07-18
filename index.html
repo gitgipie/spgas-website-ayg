@@ -1028,6 +1028,29 @@
         .btn-pulse:hover {
             animation: none; /* Stop pulsing on hover */
         }
+    
+        /* Visual Enhancements */
+        header {
+            background-color: rgba(255, 255, 255, 0.85) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        .bg-pattern {
+            background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
@@ -1448,6 +1471,38 @@
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('open');
                 navMenu.classList.remove('open');
+            });
+        });
+    </script>
+
+    <!-- Scroll Animations Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            // Automatically add fade-in-up class to key elements
+            const selectorsToAnimate = [
+                '.service-card', 
+                '.process-item', 
+                '.about-content', 
+                '.contact-card',
+                '.section-header',
+                '.why-choose-card',
+                '.hero-content'
+            ];
+            
+            selectorsToAnimate.forEach(selector => {
+                document.querySelectorAll(selector).forEach(el => {
+                    el.classList.add('fade-in-up');
+                    observer.observe(el);
+                });
             });
         });
     </script>
