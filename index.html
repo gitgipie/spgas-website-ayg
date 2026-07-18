@@ -1475,7 +1475,7 @@
         });
     </script>
 
-        <!-- Scroll Animations Script -->
+            <!-- Scroll Animations Script -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const observer = new IntersectionObserver((entries) => {
@@ -1487,7 +1487,6 @@
                 });
             }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
-            // Automatically add fade-in-up class to key elements
             const selectorsToAnimate = [
                 '.service-card', 
                 '.process-item', 
@@ -1504,7 +1503,10 @@
                 '.form-container',
                 '.direct-card',
                 '.office-details-card',
-                '.site-visit-badge'
+                '.site-visit-badge',
+                '.service-detail-content',
+                '.service-detail-visual',
+                '.final-cta .container'
             ];
             
             selectorsToAnimate.forEach(selector => {
