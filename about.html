@@ -756,6 +756,16 @@
             opacity: 1;
             transform: translateY(0);
         }
+    
+        .profile-img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -850,13 +860,7 @@
             </div>
             
             <div class="profile-visual">
-                <div class="portrait-placeholder">
-                    <!-- User portrait outline SVG -->
-                    <svg class="portrait-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                    <h4>Stanley Powell Portrait</h4>
-                    <p>[Photo to be added]</p>
-                    <p style="font-size: 0.75rem; margin-top: 1rem; color: var(--text-muted);">Recommended dimensions: 400x500px (JPG/PNG)</p>
-                </div>
+                <img src="assets/stanley-profile.jpg" alt="Stanley Powell - SAQCC Gas Installer" class="profile-img">
             </div>
         </div>
     </section>
